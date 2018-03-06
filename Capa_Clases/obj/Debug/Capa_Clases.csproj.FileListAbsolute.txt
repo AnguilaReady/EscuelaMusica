@@ -1,0 +1,17 @@
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Clases\bin\Debug\Capa_Clases.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Clases\bin\Debug\Capa_Clases.pdb
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.csproj.CoreCompileInputs.cache
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.pdb
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.csprojResolveAssemblyReference.cache
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Clases\bin\Debug\Capa_Clases.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Clases\bin\Debug\Capa_Clases.pdb
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.csproj.CoreCompileInputs.cache
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Clases\bin\Debug\Capa_Clases.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Clases\bin\Debug\Capa_Clases.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.csprojResolveAssemblyReference.cache
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.csproj.CoreCompileInputs.cache
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.pdb

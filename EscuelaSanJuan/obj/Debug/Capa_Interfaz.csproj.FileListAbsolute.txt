@@ -1,0 +1,138 @@
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\EscuelaSanJuan.exe.config
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\EscuelaSanJuan.exe
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\EscuelaSanJuan.pdb
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Capa_Interfaz.csprojResolveAssemblyReference.cache
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\App.g.cs
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan_MarkupCompile.cache
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan_MarkupCompile.lref
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.g.resources
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.Properties.Resources.resources
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Capa_Interfaz.csproj.GenerateResource.Cache
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Capa_Interfaz.csproj.CoreCompileInputs.cache
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.exe
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.pdb
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Negocio.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Datos.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Npgsql.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Negocio.pdb
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Datos.pdb
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Npgsql.xml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Clases.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Clases.pdb
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Login.g.cs
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Login.baml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\MenuPrincipal.g.cs
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\MenuPrincipal.baml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignColors.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\App.baml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoGestion.g.cs
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoInsertar.g.cs
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\GestionUsuarios.g.cs
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorGestion.g.cs
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorInsertar.g.cs
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoGestion.baml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoInsertar.baml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\GestionUsuarios.baml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorGestion.baml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorInsertar.baml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\EscuelaSanJuan.exe.config
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\EscuelaSanJuan.exe
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\EscuelaSanJuan.pdb
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Clases.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Negocio.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignColors.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Datos.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Npgsql.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Clases.pdb
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Negocio.pdb
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Datos.pdb
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Npgsql.xml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Capa_Interfaz.csprojResolveAssemblyReference.cache
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoGestion.g.cs
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoInsertar.g.cs
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\GestionUsuarios.g.cs
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Login.g.cs
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\MenuPrincipal.g.cs
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorGestion.g.cs
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorInsertar.g.cs
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\App.g.cs
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan_MarkupCompile.cache
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan_MarkupCompile.lref
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\App.baml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoGestion.baml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoInsertar.baml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\GestionUsuarios.baml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Login.baml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\MenuPrincipal.baml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorGestion.baml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorInsertar.baml
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.g.resources
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.Properties.Resources.resources
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Capa_Interfaz.csproj.GenerateResource.Cache
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Capa_Interfaz.csproj.CoreCompileInputs.cache
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.exe
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.pdb
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\CapturaImagen.g.cs
+C:\Users\casa\Desktop\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\CapturaImagen.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\EscuelaSanJuan.exe.config
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\EscuelaSanJuan.exe
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\EscuelaSanJuan.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\AForge.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\AForge.Video.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Clases.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Negocio.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignColors.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Datos.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Npgsql.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Clases.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Negocio.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\AForge.xml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\AForge.Video.xml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Capa_Datos.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\Npgsql.xml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Capa_Interfaz.csprojResolveAssemblyReference.cache
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoGestion.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoInsertar.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\GestionUsuarios.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Login.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\MenuPrincipal.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorGestion.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorInsertar.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\App.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan_MarkupCompile.cache
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan_MarkupCompile.lref
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\App.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoGestion.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\AlumnoInsertar.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\GestionUsuarios.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Login.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\MenuPrincipal.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorGestion.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\ProfesorInsertar.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.g.resources
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.Properties.Resources.resources
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Capa_Interfaz.csproj.GenerateResource.Cache
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\Capa_Interfaz.csproj.CoreCompileInputs.cache
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.exe
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EmpleadoGestion.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EmpleadoGestion.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EmpleadoInsertar.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\obj\Debug\EmpleadoInsertar.baml

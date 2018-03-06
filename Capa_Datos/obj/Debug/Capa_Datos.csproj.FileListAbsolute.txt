@@ -1,0 +1,29 @@
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Datos\bin\Debug\Npgsql.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Datos\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Datos\bin\Debug\Npgsql.xml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Datos\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\Portatil\Desktop\2 DAM\Proyecto Final\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.csprojResolveAssemblyReference.cache
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Datos\bin\Debug\Npgsql.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Datos\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Datos\bin\Debug\Npgsql.xml
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Datos\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\casa\Desktop\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Datos\bin\Debug\Npgsql.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Datos\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Datos\bin\Debug\Npgsql.xml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Datos\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Datos\obj\Debug\Capa_Datos.csprojResolveAssemblyReference.cache
