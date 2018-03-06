@@ -36,13 +36,6 @@ namespace EscuelaSanJuan
             Environment.Exit(0);
         }
 
-        private void gestion_Checked(object sender, RoutedEventArgs e)
-        {
-            GestionUsuarios ventana = new GestionUsuarios(negocio, this);
-            this.IsEnabled = false;
-            ventana.Show();
-        }
-
         private void insertarAlumno_Click(object sender, RoutedEventArgs e)
         {
             AlumnoInsertar ventana = new AlumnoInsertar(negocio, this);
@@ -85,9 +78,25 @@ namespace EscuelaSanJuan
             ventana.Show();
         }
 
+        
+        private void insertarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            InsertarUsuario ventana = new InsertarUsuario(negocio, this);
+            this.IsEnabled = false;
+            ventana.Show();
+        }
+
+        private void gestionarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            GestionUsuarios ventana = new GestionUsuarios(negocio, this);
+            this.IsEnabled = false;
+            ventana.Show();
+        }
+
         private void Window_Closing_1(object sender, System.ComponentModel.CancelEventArgs e)
         {
             Environment.Exit(0);
         }
+
     }
 }

@@ -40,3 +40,17 @@ C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Negocio\obj\Debug\Capa_Ne
 C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
 C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Negocio\obj\Debug\Capa_Negocio.dll
 C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\bin\Debug\Capa_Clases.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\bin\Debug\Capa_Datos.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\bin\Debug\Npgsql.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\bin\Debug\Capa_Clases.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\bin\Debug\Npgsql.xml
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\obj\Debug\Capa_Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Negocio\obj\Debug\Capa_Negocio.pdb

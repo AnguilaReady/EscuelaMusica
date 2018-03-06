@@ -16,8 +16,10 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="GestionUsuarios" Height="300" Width="300" Closing="Window_Closing">
+        Title="GestionUsuarios" Height="551.357" Width="732" Closing="Window_Closing">
     <Grid>
-        
+
+        <TextBox x:Name="tbUser" materialDesign:HintAssist.Hint="Usuario" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="36,90,302,0" Height="38" VerticalAlignment="Top" />
+        <TextBox x:Name="tbPass" materialDesign:HintAssist.Hint="Password" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="36,193,302,0" Height="38" VerticalAlignment="Top" />
     </Grid>
 </Window>

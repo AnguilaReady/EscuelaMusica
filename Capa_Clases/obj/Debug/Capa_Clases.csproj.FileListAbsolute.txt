@@ -15,3 +15,9 @@ C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Cla
 C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.csproj.CoreCompileInputs.cache
 C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.dll
 C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\Capa_Clases\obj\Debug\Capa_Clases.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Clases\bin\Debug\Capa_Clases.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Clases\bin\Debug\Capa_Clases.pdb
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Clases\obj\Debug\Capa_Clases.csprojResolveAssemblyReference.cache
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Clases\obj\Debug\Capa_Clases.csproj.CoreCompileInputs.cache
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Clases\obj\Debug\Capa_Clases.dll
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\Capa_Clases\obj\Debug\Capa_Clases.pdb

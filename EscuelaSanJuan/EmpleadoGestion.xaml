@@ -22,8 +22,8 @@
         <CollectionViewSource  x:Key="lista_Alumnos"  Source="{Binding}" />
     </Window.Resources>
     <Grid>
-        <RadioButton x:Name="rbAlta" Content="Alumnos dado de Alta" HorizontalAlignment="Left" Margin="37,29,0,0" VerticalAlignment="Top"  Checked="rbAlta_Checked"/>
-        <RadioButton x:Name="rbBaja" Content="Alumnos dados de baja" HorizontalAlignment="Left" Margin="37,55,0,0" VerticalAlignment="Top" Checked="rbBaja_Checked"/>
+        <RadioButton x:Name="rbAlta" Content="Empleados dados de Alta" HorizontalAlignment="Left" Margin="37,29,0,0" VerticalAlignment="Top"  Checked="rbAlta_Checked"/>
+        <RadioButton x:Name="rbBaja" Content="Empleados dados de Baja" HorizontalAlignment="Left" Margin="37,55,0,0" VerticalAlignment="Top" Checked="rbBaja_Checked"/>
         <TextBox x:Name="tbNombre" materialDesign:HintAssist.Hint="Nombre" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="231,19,381,0" Height="38" VerticalAlignment="Top" KeyUp="tbNombre_KeyUp" />
         <!--LISTADO GENERAL ALUMNOS -->
         <DataGrid x:Name="dataGrid" ItemsSource="{Binding Source={StaticResource lista_Alumnos}}" HorizontalAlignment="Left" Margin="20,90,0,0" Width="517" AutoGenerateColumns="False"

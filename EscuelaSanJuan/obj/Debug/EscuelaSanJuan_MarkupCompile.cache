@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\App.xaml
-9-105539214
+10-1044486018
 
-171504185712
-21482018355
-AlumnoGestion.xaml;AlumnoInsertar.xaml;EmpleadoInsertar.xaml;EmpleadoGestion.xaml;GestionUsuarios.xaml;Login.xaml;MenuPrincipal.xaml;ProfesorGestion.xaml;ProfesorInsertar.xaml;
+14-182813843
+74110079282
+AlumnoGestion.xaml;AlumnoInsertar.xaml;EmpleadoInsertar.xaml;EmpleadoGestion.xaml;GestionUsuarios.xaml;InsertarUsuario.xaml;Login.xaml;MenuPrincipal.xaml;ProfesorGestion.xaml;ProfesorInsertar.xaml;
 
-True
+False
 

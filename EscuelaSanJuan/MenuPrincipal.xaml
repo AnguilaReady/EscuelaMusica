@@ -20,7 +20,10 @@
     <Grid>
         <Menu HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="644">
             <MenuItem x:Name="archivo" Header="General"  >
-                <MenuItem x:Name="gestion" Header="Gestion" Visibility="Collapsed" Click="gestion_Checked"/>
+                <MenuItem x:Name="gestion" Header="Gestion Usuarios" Visibility="Collapsed">
+                    <MenuItem x:Name="insertarUsuario" Header="Insertar" Click="insertarUsuario_Click" />
+                    <MenuItem x:Name="gestionarUsuario" Header="Gestionar" Click="gestionarUsuario_Click" />
+                </MenuItem>
                 <MenuItem x:Name="salir" Header="Salir" Click="salir_Click"/>
             </MenuItem>
             <MenuItem x:Name="alumnos" Header="Alumnos"  >
