@@ -30,6 +30,8 @@ namespace EscuelaSanJuan
             this.menuPrincipal = menuPrincipal;
 
             listaProfesores = negocio.GetListaProfesores();
+            negocio.borrarListaProfesores();
+            negocio.leerProfesores();
             InitializeComponent();
             MiVista = (System.Windows.Data.CollectionViewSource)this.Resources["lista_Alumnos"];
             MiVista.Source = listaProfesores;
@@ -64,7 +66,6 @@ namespace EscuelaSanJuan
                 editarApellidos.Text = profesorSeleccionado.Apellidos;
                 editarTelefono.Text = profesorSeleccionado.Telefono;
                 editarDireccion.Text = profesorSeleccionado.Direccion;
-                editarAsignatura.Text = profesorSeleccionado.Estudios;
             }
         }
 
@@ -76,7 +77,7 @@ namespace EscuelaSanJuan
                 profesorSeleccionado.Apellidos = editarApellidos.Text;
                 profesorSeleccionado.Telefono = editarTelefono.Text;
                 profesorSeleccionado.Direccion = editarDireccion.Text;
-                profesorSeleccionado.Estudios = editarAsignatura.Text;
+                profesorSeleccionado.Estudios = cmbAsignatura2.Text.ToLower();
             }
             catch (NullReferenceException) { }
 

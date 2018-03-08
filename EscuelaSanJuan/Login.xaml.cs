@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using Capa_Negocio;
 using Capa_Clases;
+using System.Collections.ObjectModel;
 
 namespace EscuelaSanJuan
 {
@@ -11,7 +12,7 @@ namespace EscuelaSanJuan
     {
         private Negocio negocio;
         private int count = 1;
-        private List<Usuario> lista;
+        private ObservableCollection<Usuario> lista;
         public Login()
         {
             negocio = new Negocio();
@@ -26,6 +27,7 @@ namespace EscuelaSanJuan
                 MandarMensaje("El Usuario no puede estar vacio");
                 //lblError.Content = "El Usuario no puede estar vacio";
             }
+
             else if (tbPass.Password.ToString() == "")
             {
                 MandarMensaje("El PassWord no puede estar vacio");

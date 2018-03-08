@@ -10,7 +10,7 @@ create table empleado
 	direccion varchar(100),
     imagen varchar(100),
 	activo boolean,
-	primary key(dni,fechaNacimiento)
+	primary key(dni)
 )
 
 create table profesor
@@ -25,7 +25,7 @@ create table profesor
 	estudios varchar(200),
     imagen varchar(100),
 	activo boolean,
-	primary key(dni,fechaNacimiento)
+	primary key(dni)
 )
 
 create table alumno
@@ -37,27 +37,32 @@ create table alumno
 	fechaAlta date,
 	telefono varchar(15),
 	direccion varchar(100),
-	estudios varchar(200),
-	anoCurso integer,
 	personaContacto varchar(50),
     imagen varchar(100),
 	activo boolean,
-	primary key(dni,fechaNacimiento)
+	primary key(dni)
 );
 
-create table asignatura
+create table matricula
 (
-	codigoAsignatura varchar(10),
-	nombre varchar(10),
-	primary Key(codigoAsignatura)
-)
+	codigo serial,
+	dniAlumno varchar(50),
+	asignatura varchar(100),
+	anoCurso integer,
+	primary key(codigo),
+	FOREIGN key (dniAlumno) references alumno(dni)
+);
 
-create table matriculado
+create table notas
 (
-	codigoAlumno varchar(10) references alumno(codigoalumno),
-	codigoProfesor varchar(10)references profesor(codigoprofesor),
-	codigoAsignatura varchar(10) references asignatura(codigoasignatura),
-	primary key(codigoAlumno,codigoProfesor,codigoAsignatura)
+	dniAlumno varchar(50),
+	anoCurso integer,
+	estudios varchar(200),
+	PrimerTrimestre decimal(3,1),
+	SegundoTrimestre decimal(3,1),
+	TercerTrimestre decimal(3,1),
+	primary key(dniAlumno,anoCurso),
+	FOREIGN key (dniAlumno) references alumno(dni)
 );
 
 create table usuarios

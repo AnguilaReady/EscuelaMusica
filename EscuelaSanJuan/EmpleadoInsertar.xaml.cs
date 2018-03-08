@@ -56,7 +56,7 @@ namespace EscuelaSanJuan
                 //Si el filepath esta vacio es por que no quiere hacer una foto y ponemos la del avatar
                 if (filePath == "")
                 {
-                    filePath = @"C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\imagenesPersonas\avatar.png";
+                    filePath = @"C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\imagenesPersonas\avatar.png";
                 }
                 else
                 {
@@ -71,7 +71,7 @@ namespace EscuelaSanJuan
                     }
                     catch (System.ArgumentNullException)
                     {
-                        filePath = @"C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\imagenesPersonas\avatar.png";
+                        filePath = @"C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\imagenesPersonas\avatar.png";
                     }
                 }
 
@@ -175,7 +175,7 @@ namespace EscuelaSanJuan
         {
             if (cam.IsRunning)
             {
-                filePath = @"C:\Users\Portatil\Documents\GitHub\EscuelaSanJuan\EscuelaSanJuan\imagenesPersonas\";
+                filePath = @"C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\imagenesPersonas\";
                 cam.Stop();
             }
         }

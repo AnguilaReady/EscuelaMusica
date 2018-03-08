@@ -78,6 +78,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AlumnoMatricular.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AlumnoNotas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="EmpleadoInsertar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -103,6 +111,12 @@
     </Compile>
     <Compile Include="AlumnoInsertar.xaml.cs">
       <DependentUpon>AlumnoInsertar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AlumnoMatricular.xaml.cs">
+      <DependentUpon>AlumnoMatricular.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AlumnoNotas.xaml.cs">
+      <DependentUpon>AlumnoNotas.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>

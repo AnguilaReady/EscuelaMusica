@@ -28,22 +28,8 @@
         <TextBox x:Name="tbTelefono" materialDesign:HintAssist.Hint="Telefono" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="36,279,24,0" Height="38" VerticalAlignment="Top" />
         <TextBox x:Name="tbDireccion" materialDesign:HintAssist.Hint="Direccion" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="36,322,24,0" Height="38" VerticalAlignment="Top" />
         <TextBox x:Name="TbPeronaContacto" materialDesign:HintAssist.Hint="Persona de Contacto" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="36,365,24,0" Height="38" VerticalAlignment="Top" />
-        <DatePicker x:Name="dpFechaNacimiento" materialDesign:HintAssist.Hint="Fecha de Nacimiento" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="29,191,38,0" Height="37" VerticalAlignment="Top" Grid.Column="1" />
-        <DatePicker x:Name="dpFechaAlta" materialDesign:HintAssist.Hint="Fecha de Alta" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="29,244,38,0" Height="38" VerticalAlignment="Top" Grid.Column="1" />
-        <ComboBox x:Name="cmbAsignatura" materialDesign:HintAssist.Hint="Asignatura a inscribir" IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="29,297,120,0" VerticalAlignment="Top" Height="40" Grid.Column="1">
-            <ComboBoxItem IsSelected="True">
-                Piano
-            </ComboBoxItem>
-            <ComboBoxItem>
-                Violin
-            </ComboBoxItem>
-            <ComboBoxItem>
-                saxofon
-            </ComboBoxItem>
-            <ComboBoxItem>
-                Clarinete
-            </ComboBoxItem>
-        </ComboBox>
+        <DatePicker x:Name="dpFechaNacimiento" materialDesign:HintAssist.Hint="Fecha de Nacimiento" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="29,239,38,0" Height="37" VerticalAlignment="Top" Grid.Column="1" />
+        <DatePicker x:Name="dpFechaAlta" materialDesign:HintAssist.Hint="Fecha de Alta" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Margin="29,292,38,0" Height="38" VerticalAlignment="Top" Grid.Column="1" />
         <Button x:Name="btnInsertar" Content="Insertar" HorizontalAlignment="Left" Margin="184,429,0,0" VerticalAlignment="Top" Width="84" Click="btnInsertar_Click"/>
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="29,429,0,0" VerticalAlignment="Top" Width="90" Click="btnCancelar_Click" Grid.Column="1"/>
         <Image x:Name="imagenAlumno" Source="imagenesPersonas/avatar.png" HorizontalAlignment="Left" Height="120" Margin="246,33,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
@@ -59,12 +45,5 @@
             <materialDesign:PackIcon Kind="CameraIris" Height="24" Width="24" />
         </Button>
         <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="Snackbar" Grid.ColumnSpan="2" Margin="160,0" />
-        <ComboBox x:Name="cmbAnoCurso" materialDesign:HintAssist.Hint="Curso" IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="193,297,38,0" VerticalAlignment="Top" Height="40" Grid.Column="1">
-            <ComboBoxItem IsSelected="True" Content="1"/>
-            <ComboBoxItem Content="2"/>
-            <ComboBoxItem Content="3"/>
-            <ComboBoxItem Content="4"/>
-            <ComboBoxItem Content="5"/>
-        </ComboBox>
     </Grid>
 </Window>

@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EscuelaSanJuan"
         mc:Ignorable="d"
-        Title="InsertarUsuario" Height="300" Width="300" Closing="Window_Closing">
-    <Grid>
         
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="InsertarUsuario" Height="288" Width="361" Closing="Window_Closing">
+    <Grid>
+        <TextBox x:Name="tbUsuario" materialDesign:HintAssist.Hint="Usuario" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="36,12,24,0" Height="39" VerticalAlignment="Top" />
+        <TextBox x:Name="tbPass" materialDesign:HintAssist.Hint="Password" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="36,51,24,0" Height="39" VerticalAlignment="Top" />
+        <Button x:Name="insertar" Content="Insertar" HorizontalAlignment="Left" Margin="80,158,0,0" VerticalAlignment="Top" Width="83" Click="insertar_Click" />
+        <Button x:Name="volver" Content="Volver" HorizontalAlignment="Left" Margin="188,157,0,0" VerticalAlignment="Top" Width="83" Click="volver_Click" />
+        <TextBox x:Name="tbPass_Copy" materialDesign:HintAssist.Hint="Password" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="36,90,24,0" Height="39" VerticalAlignment="Top" />
+        <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="Snackbar" Grid.ColumnSpan="2" />
     </Grid>
 </Window>

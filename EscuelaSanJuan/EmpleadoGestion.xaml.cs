@@ -29,6 +29,8 @@ namespace EscuelaSanJuan
             this.negocio = negocio;
             this.menuPrincipal = menuPrincipal;
 
+            negocio.borrarListaEmpleados();
+            negocio.leerEmpleados();
             listaEmpleado = negocio.GetListaEmpleados();
             InitializeComponent();
             MiVista = (System.Windows.Data.CollectionViewSource)this.Resources["lista_Alumnos"];

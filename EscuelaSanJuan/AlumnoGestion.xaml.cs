@@ -29,12 +29,13 @@ namespace EscuelaSanJuan
             this.negocio = negocio;
             this.menuPrincipal = menuPrincipal;
 
+            negocio.borrarListaAlumnos();
+            negocio.leerAlumnos();
             listaAlumnos = negocio.GetListaAlumnos();
             InitializeComponent();
             MiVista = (System.Windows.Data.CollectionViewSource)this.Resources["lista_Alumnos"];
             MiVista.Source = listaAlumnos;
             rbAlta.IsChecked = true;
-
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -60,14 +61,12 @@ namespace EscuelaSanJuan
                 telefonoAlumnoSelecionado.Text = "Telefono : " + alumnoSeleccionado.Telefono;
                 direccionAlumnoSelecionado.Text = "Direccion : " + alumnoSeleccionado.Direccion;
                 tutorAlumnoSelecionado.Text = "Tutor : " + alumnoSeleccionado.PersonaContacto;
-                asigauraAlumnoSelecionado.Text = "Asginatura : " + alumnoSeleccionado.AnoCurso +"-"+alumnoSeleccionado.Estudios;
+
 
                 editarNombre.Text = alumnoSeleccionado.Nombre;
                 editarApellidos.Text = alumnoSeleccionado.Apellidos;
                 editarTelefono.Text = alumnoSeleccionado.Telefono;
                 editarDireccion.Text = alumnoSeleccionado.Direccion;
-                editarAsignatura.Text = alumnoSeleccionado.Estudios;
-                editarAnoCurso.Text = alumnoSeleccionado.AnoCurso.ToString();
             }
         }
 
@@ -79,8 +78,7 @@ namespace EscuelaSanJuan
                 alumnoSeleccionado.Apellidos = editarApellidos.Text;
                 alumnoSeleccionado.Telefono = editarTelefono.Text;
                 alumnoSeleccionado.Direccion = editarDireccion.Text;
-                alumnoSeleccionado.Estudios = editarAsignatura.Text;
-                alumnoSeleccionado.AnoCurso = Int32.Parse(editarAnoCurso.Text);
+
             }
             catch (NullReferenceException) { }
             
@@ -144,21 +142,21 @@ namespace EscuelaSanJuan
         {
             Alumno alumno = (Alumno)e.Item;
             string nombre = tbNombre.Text;
-            ComboBoxItem typeItem = (ComboBoxItem)cmbAsignatura.SelectedItem;
+            /*ComboBoxItem typeItem = (ComboBoxItem)cmbAsignatura.SelectedItem;
             string asignatura = typeItem.Content.ToString();
             ComboBoxItem typeItem2 = (ComboBoxItem)cmbAnoCurso.SelectedItem;
             string numero = typeItem2.Content.ToString();
-            Console.WriteLine();
+            Console.WriteLine();*/
 
             if (alumno != null)
             {
                 if (alumno.Nombre.Contains(nombre))
                 {
-                    if(asignatura != "")
+                    e.Accepted = true;
+                    /*if (asignatura != "")
                     {
                         if(alumno.Estudios==asignatura)
                         {
-                            //e.Accepted = true;
                             if(numero != "")
                             {
                                 if(alumno.AnoCurso == Convert.ToInt32(numero) )
@@ -183,7 +181,7 @@ namespace EscuelaSanJuan
                     else
                     {
                         e.Accepted = true;
-                    }
+                    }*/
                 }
                 else
                 {

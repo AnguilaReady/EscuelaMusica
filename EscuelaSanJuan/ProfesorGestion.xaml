@@ -24,8 +24,8 @@
     <Grid>
         <RadioButton x:Name="rbAlta" Content="Profesores dados de Alta" HorizontalAlignment="Left" Margin="37,29,0,0" VerticalAlignment="Top"  Checked="rbAlta_Checked"/>
         <RadioButton x:Name="rbBaja" Content="Profesores dados de Baja" HorizontalAlignment="Left" Margin="37,55,0,0" VerticalAlignment="Top" Checked="rbBaja_Checked"/>
-        <TextBox x:Name="tbNombre" materialDesign:HintAssist.Hint="Nombre" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="231,19,381,0" Height="38" VerticalAlignment="Top" KeyUp="tbNombre_KeyUp" />
-        <ComboBox x:Name="cmbAsignatura" materialDesign:HintAssist.Hint="Asignatura" IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="482,17,154,0" VerticalAlignment="Top" Height="40" SelectionChanged="cmbAsignatura_SelectionChanged" >
+        <TextBox x:Name="tbNombre" materialDesign:HintAssist.Hint="Filtrar por Nombre" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="231,19,381,0" Height="38" VerticalAlignment="Top" KeyUp="tbNombre_KeyUp" />
+        <ComboBox x:Name="cmbAsignatura" materialDesign:HintAssist.Hint="Filtrar por Asignatura" IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="482,17,154,0" VerticalAlignment="Top" Height="40" SelectionChanged="cmbAsignatura_SelectionChanged" >
             <ComboBoxItem Content="" IsSelected="True"/>
             <ComboBoxItem Content="Piano"/>
             <ComboBoxItem Content="Violin"/>
@@ -117,7 +117,12 @@
                         <TextBox x:Name="editarApellidos" Grid.Row="1" materialDesign:HintAssist.Hint="Apellidos" materialDesign:HintAssist.IsFloating="True" Margin="0 12 0 0"/>
                         <TextBox x:Name="editarTelefono" Grid.Row="2" materialDesign:HintAssist.Hint="Telefono" materialDesign:HintAssist.IsFloating="True" Margin="0 12 0 0"/>
                         <TextBox x:Name="editarDireccion" Grid.Row="3" materialDesign:HintAssist.Hint="Direccion" materialDesign:HintAssist.IsFloating="True" Margin="0 12 0 0"/>
-                        <TextBox x:Name="editarAsignatura" Grid.Row="4" materialDesign:HintAssist.Hint="Curso" materialDesign:HintAssist.IsFloating="True" Margin="0 12 0 0"/>
+                        <ComboBox x:Name="cmbAsignatura2" Grid.Row="4" materialDesign:HintAssist.Hint="Asignatura" IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="0,10,0,0" HorizontalAlignment="Left"  Height="40" Width="172">
+                            <ComboBoxItem Content="Piano" IsSelected="True"/>
+                            <ComboBoxItem Content="Violin"/>
+                            <ComboBoxItem Content="Saxofon"/>
+                            <ComboBoxItem Content="Clarinete"/>
+                        </ComboBox>
                     </Grid>
                 </Grid>
             </materialDesign:Flipper.BackContent>

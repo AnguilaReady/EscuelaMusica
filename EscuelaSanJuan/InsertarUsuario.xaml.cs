@@ -32,5 +32,38 @@ namespace EscuelaSanJuan
         {
             menuPrincipal.IsEnabled = true;
         }
+
+        private void insertar_Click(object sender, RoutedEventArgs e)
+        {
+            int insertar = 0;
+            if(tbPass.Text==tbPass_Copy.Text)
+            {
+               insertar = negocio.insertarUsuario(new Usuario(tbUsuario.Text, tbPass.Text));
+            }
+            else
+            {
+                MandarMensaje("Las Contraseñas no son iguales");
+            }
+
+            if(insertar>0)
+            {
+                MandarMensaje("Usuario insertardo");
+            }
+            
+        }
+
+        private void volver_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            menuPrincipal.IsEnabled = true;
+        }
+
+        public void MandarMensaje(String mensaje)
+        {
+            var messageQueue = Snackbar.MessageQueue;
+            var message = mensaje;
+            Task.Factory.StartNew(() => messageQueue.Enqueue(message));
+        }
     }
 }
+

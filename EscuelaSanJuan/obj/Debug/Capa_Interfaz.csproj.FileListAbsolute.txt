@@ -190,3 +190,7 @@ C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\obj\Debug\Escuel
 C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\obj\Debug\EscuelaSanJuan.pdb
 C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\obj\Debug\InsertarUsuario.g.cs
 C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\obj\Debug\InsertarUsuario.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\obj\Debug\AlumnoNotas.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\obj\Debug\AlumnoNotas.baml
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\obj\Debug\AlumnoMatricular.g.cs
+C:\Users\Portatil\Documents\GitHub\EscuelaMusica\EscuelaSanJuan\obj\Debug\AlumnoMatricular.baml

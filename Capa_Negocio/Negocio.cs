@@ -13,21 +13,21 @@ namespace Capa_Negocio
     public class Negocio
     {
         private BD bd;
-        private List<Usuario> listaUsuarios;
+        private ObservableCollection<Usuario> listaUsuarios;
         private ObservableCollection<Alumno> listaAlumnos;
         private ObservableCollection<Profesor> listaProfesores;
         private ObservableCollection<Empleado> listaEmpleados;
-        private List<Asignatura> listaAsignturas;
+        private ObservableCollection<Matriculado> listaMatriculados;
 
         public Negocio()
         {
             bd = new BD();
 
-            listaUsuarios = new List<Usuario>();
+            listaUsuarios = new ObservableCollection<Usuario>();
             listaAlumnos = new ObservableCollection<Alumno>();
             listaProfesores = new ObservableCollection<Profesor>();
             listaEmpleados = new ObservableCollection<Empleado>();
-            listaAsignturas = new List<Asignatura>();
+            listaMatriculados = new ObservableCollection<Matriculado>();
 
             leerUsuarios();
             leerAlumnos();
@@ -52,7 +52,7 @@ namespace Capa_Negocio
             bd.Cerrar();
         }
         //DEVUELVO LA LISTA DE USUARIOS
-        public List<Usuario> GetListaUsuarios()
+        public ObservableCollection<Usuario> GetListaUsuarios()
         {
             return listaUsuarios;
         }
@@ -108,10 +108,8 @@ namespace Capa_Negocio
                     datosRecibidos.GetString(5),
                     datosRecibidos.GetString(6),
                     datosRecibidos.GetString(7),
-                    datosRecibidos.GetInt32(8),
-                    datosRecibidos.GetString(9),
-                    datosRecibidos.GetString(10),
-                    datosRecibidos.GetBoolean(11)));
+                    datosRecibidos.GetString(8),
+                    datosRecibidos.GetBoolean(9)));
             }
 
             bd.Cerrar();
@@ -121,6 +119,11 @@ namespace Capa_Negocio
         public ObservableCollection<Alumno> GetListaAlumnos()
         {
             return listaAlumnos;
+        }
+
+        public void borrarListaAlumnos()
+        {
+            listaAlumnos.Clear();
         }
         //DEVUELVO UN USUARIO
         public Alumno GetAlumno(int indice)
@@ -150,8 +153,6 @@ namespace Capa_Negocio
                 "fechaalta='" + alumno.FechaAlta + "'," +
                 "telefono='" + alumno.Telefono + "'," +
                 "direccion='" + alumno.Direccion + "'," +
-                "estudios='" + alumno.Estudios + "'," +
-                "anocurso='" + alumno.AnoCurso + "'," +
                 "personacontacto='" + alumno.PersonaContacto + "'," +
                 "imagen='" + alumno.Imagen + "'," +
                 "activo=" + alumno.Activo + " " +
@@ -169,7 +170,7 @@ namespace Capa_Negocio
             bd.Abrir();
             int datosInsertados = bd.EjecutarOrden("insert into " +
                 "alumno(dni,nombre,apellidos,fechanacimiento,fechaalta,telefono," +
-                "direccion,estudios,anocurso,personacontacto,imagen,activo) " +
+                "direccion,personacontacto,imagen,activo) " +
                 "values (" +
                 "'" + alumno.Dni + "'," +
                 "'" + alumno.Nombre + "'," +
@@ -178,8 +179,6 @@ namespace Capa_Negocio
                 "'" + alumno.FechaAlta + "'," +
                 "'" + alumno.Telefono + "'," +
                 "'" + alumno.Direccion + "'," +
-                "'" + alumno.Estudios + "'," +
-                "'" + alumno.AnoCurso + "'," +
                 "'" + alumno.PersonaContacto + "'," +
                 "'" + alumno.Imagen + "', true);");
             bd.Cerrar();
@@ -188,7 +187,7 @@ namespace Capa_Negocio
 
         /*--------------------------------PROFESORES------------------------------------------*/
 
-        //CARGO LA LISTA DE ALUMNOS CON LOS ALUMNOS QUE HAY EN LA BD
+        //CARGO LA LISTA DE PROFESORES QUE HAY EN LA BD
         public void leerProfesores()
         {
             bd.Abrir();
@@ -211,6 +210,10 @@ namespace Capa_Negocio
             bd.Cerrar();
         }
 
+        public void borrarListaProfesores()
+        {
+            listaProfesores.Clear();
+        }
         //DEVUELVO LA LISTA DE PROFESORES
         public ObservableCollection<Profesor> GetListaProfesores()
         {
@@ -299,6 +302,10 @@ namespace Capa_Negocio
             bd.Cerrar();
         }
 
+        public void borrarListaEmpleados()
+        {
+            listaEmpleados.Clear();
+        }
         //DEVUELVO LA LISTA DE EMPLEADOS
         public ObservableCollection<Empleado> GetListaEmpleados()
         {
@@ -355,60 +362,49 @@ namespace Capa_Negocio
         }
 
 
-        /*--------------------------------ASIGNATURA------------------------------------------*/
+        /*--------------------------------MATRICULADO------------------------------------------*/
 
-        //CARGO LA LISTA DE EMPLEADOS CON LOS EMPELADOS QUE HAY EN LA BD
+        //CARGO LA LISTA DE MATRICULADOS QUE HAY EN LA BD
         public void leerAsignaturas()
         {
             bd.Abrir();
-            NpgsqlDataReader datosRecibidos = bd.EjecutarSelect("select * from asignatura;");
+            NpgsqlDataReader datosRecibidos = bd.EjecutarSelect("select * from matricula;");
             while (datosRecibidos.Read())
             {
-                listaAsignturas.Add(new Asignatura(
+                listaMatriculados.Add(new Matriculado(
                     datosRecibidos.GetString(0),
-                    datosRecibidos.GetString(1)));
+                    datosRecibidos.GetString(1),
+                    datosRecibidos.GetInt32(2)));
             }
 
             bd.Cerrar();
         }
 
-        //DEVUELVO LA LISTA DE ASIGNATURAS
-        public List<Asignatura> GetListaAsignaturas()
+        //DEVUELVO LA LISTA DE MATRICULADOS
+        public ObservableCollection<Matriculado> GetListaAsignaturas()
         {
-            return listaAsignturas;
+            return listaMatriculados;
         }
-        //DEVUELVO UN ASIGNATURA
-        public Asignatura GetAsignatura(int indice)
-        {
-            return listaAsignturas[indice];
-        }
-        //BORRO ASIGNATURA
-        public int BorrarAsinatura(string codigoAsignatura)
+
+        //BORRO MATRICULADO
+        public int BorrarAsinatura(Matriculado matriculado)
         {
             bd.Abrir();
-            int datosBorrados = bd.EjecutarOrden("delete from asignatura where codigoasignatura= '" + codigoAsignatura + "';");
+            int datosBorrados = bd.EjecutarOrden("delete from matricula where " +
+                "dnialumno='"+matriculado.Dni+"' and asignatura='"+matriculado.Asignatura+"';");
             bd.Cerrar();
             return datosBorrados;
         }
-        //MODIFICO ASIGNATURA
-        public int Modificarasignatura(Asignatura asignatura)
-        {
-            bd.Abrir();
-            int datosModificados = bd.EjecutarOrden("update asignatura set nombre='"
-                +asignatura.Nombre+"' where codigoasignatura='"+asignatura.CodigoAsignatura+"';");
-            bd.Cerrar();
-            return datosModificados;
-        }
 
-        //INSERTAR ASIGNATURA
-        public int insertarAsignatura(Asignatura asignatura)
+        //INSERTAR MATRICULA
+        public int insertarMatricula(Matriculado matriculado)
         {
             bd.Abrir();
             int datosInsertados = bd.EjecutarOrden("insert into " +
-                "empelado(codigoasignatura,nombre) " +
+                "matricula(dniAlumno,asignatura,anoCurso) " +
                 "values (" +
-                "'" + asignatura.CodigoAsignatura + "'," +
-                "'" + asignatura.Nombre + "');");
+                "'" + matriculado.Dni + "'," +
+                "'" + matriculado.Asignatura+ "'," + matriculado.AnoCurso + ");");
             bd.Cerrar();
             return datosInsertados;
         }

@@ -16,10 +16,92 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="GestionUsuarios" Height="551.357" Width="732" Closing="Window_Closing">
-    <Grid>
+        Title="GestionUsuarios" Height="459.857" Width="501" Closing="Window_Closing">
 
-        <TextBox x:Name="tbUser" materialDesign:HintAssist.Hint="Usuario" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="36,90,302,0" Height="38" VerticalAlignment="Top" />
-        <TextBox x:Name="tbPass" materialDesign:HintAssist.Hint="Password" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="36,193,302,0" Height="38" VerticalAlignment="Top" />
+    <Window.Resources>
+        <CollectionViewSource  x:Key="lista_Alumnos"  Source="{Binding}" />
+    </Window.Resources>
+
+    <Grid>
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding Source={StaticResource lista_Alumnos}}" 
+                HorizontalAlignment="Left" 
+                Margin="24,30,0,0" 
+                Width="242" 
+                AutoGenerateColumns="False"
+                AlternationCount="1" 
+                SelectionMode="Single" 
+                SelectionUnit="FullRow"
+                CanUserResizeRows="False" 
+                IsReadOnly="False" 
+                Height="272" 
+                VerticalAlignment="Top" SelectionChanged="dataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=Usuarios}" Width="*" Header="Nombre" />
+                <DataGridTextColumn Binding="{Binding Path=Pass}" Width="*" Header="PassWord" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!--FICHA MODIFICACION USUARIO -->
+        <materialDesign:Flipper 
+            Margin="292,30,0,0" 
+            VerticalAlignment="Top" 
+            HorizontalAlignment="Left" 
+            Height="272" Width="180"
+            
+            >
+            <!--FICHA FRONTAL -->
+            <materialDesign:Flipper.FrontContent >
+                <Grid Height="Auto" Width="Auto">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="160" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <materialDesign:ColorZone Mode="PrimaryLight" VerticalAlignment="Stretch">
+                        <Image x:Name="imgenEmpleadoSelecionado" Width="160" Height="120" Source="imagenesPersonas/avatar.png">
+                            <Image.Clip>
+                                <EllipseGeometry RadiusX="60" RadiusY="60" Center="83.5,60" />
+                            </Image.Clip>
+                        </Image>
+                    </materialDesign:ColorZone>
+                    <StackPanel Grid.Row="1" VerticalAlignment="Center">
+                        <TextBlock></TextBlock>
+                        <TextBlock x:Name="usuarioSelecionado" HorizontalAlignment="Left" Margin="0 4 0 4"></TextBlock>
+                        <TextBlock x:Name="passSelecionado" HorizontalAlignment="Left" Margin="0 4 0 4"></TextBlock>
+                        <Button x:Name="editarEmpleado" Style="{StaticResource MaterialDesignFlatButton}"
+                                Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                                Margin="0 15 0 0"
+                                HorizontalAlignment="Center" >EDITAR</Button>
+
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Flipper.FrontContent>
+            <!--FICHA TRASERA-->
+            <materialDesign:Flipper.BackContent>
+                <Grid Height="Auto" Width="Auto" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <materialDesign:ColorZone Mode="Accent" Padding="6">
+                        <StackPanel Orientation="Horizontal">
+                            <Button Style="{StaticResource MaterialDesignToolForegroundButton}"
+                                Command="{x:Static materialDesign:Flipper.FlipCommand}"
+                                HorizontalAlignment="Left" Click="btnEditarTrasero_Click">
+                                <materialDesign:PackIcon Kind="ArrowLeft" HorizontalAlignment="Right" />
+                            </Button>
+                            <TextBlock Margin="8 0 0 0" VerticalAlignment="Center">EDITAR USUARIO</TextBlock>
+                        </StackPanel>
+                    </materialDesign:ColorZone>
+                    <Grid  Margin="0 50 0 0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="172">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <TextBox x:Name="editarPass" Grid.Row="1" materialDesign:HintAssist.Hint="Password" materialDesign:HintAssist.IsFloating="True" Margin="0 12 0 0"/>
+                    </Grid>
+                </Grid>
+            </materialDesign:Flipper.BackContent>
+        </materialDesign:Flipper>
+        <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="Snackbar" Grid.ColumnSpan="2" />
+        <Button x:Name="volver" Content="Volver" HorizontalAlignment="Left" Margin="210,324,0,0" VerticalAlignment="Top" Width="75" Click="volver_Click"/>
     </Grid>
 </Window>

@@ -98,5 +98,18 @@ namespace EscuelaSanJuan
             Environment.Exit(0);
         }
 
+        private void insertarNotas_Click(object sender, RoutedEventArgs e)
+        {
+            AlumnoNotas ventana = new AlumnoNotas(negocio, this);
+            this.IsEnabled = false;
+            ventana.Show();
+        }
+
+        private void matricularAlumno_Click(object sender, RoutedEventArgs e)
+        {
+            AlumnoMatricular ventana = new AlumnoMatricular(negocio, this);
+            this.IsEnabled = false;
+            ventana.Show();
+        }
     }
 }
