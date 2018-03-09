@@ -18,6 +18,7 @@ namespace Capa_Negocio
         private ObservableCollection<Profesor> listaProfesores;
         private ObservableCollection<Empleado> listaEmpleados;
         private ObservableCollection<Matriculado> listaMatriculados;
+        private ObservableCollection<Alumno_Notas> listaNotasAlumnos;
 
         public Negocio()
         {
@@ -28,11 +29,13 @@ namespace Capa_Negocio
             listaProfesores = new ObservableCollection<Profesor>();
             listaEmpleados = new ObservableCollection<Empleado>();
             listaMatriculados = new ObservableCollection<Matriculado>();
+            listaNotasAlumnos = new ObservableCollection<Alumno_Notas>();
 
             leerUsuarios();
             leerAlumnos();
             leerProfesores();
             leerEmpleados();
+            leerNotasAlumnos();
         }
 
         /*--------------------------------USUARIOS------------------------------------------*/
@@ -407,6 +410,49 @@ namespace Capa_Negocio
                 "'" + matriculado.Asignatura+ "'," + matriculado.AnoCurso + ");");
             bd.Cerrar();
             return datosInsertados;
+        }
+
+
+
+        /*--------------------------------EMPLEADO------------------------------------------*/
+
+        //CARGO LA LISTA DE MATRICULADOS QUE HAY EN LA BD
+        public void leerNotasAlumnos()
+        {
+            bd.Abrir();
+            NpgsqlDataReader datosRecibidos = bd.EjecutarSelect("select nombre,apellidos,anocurso,asignatura,primertrimestre,segundotrimestre,tercertrimestre,notaglobal,imagen from notas, alumno where notas.dnialumno = alumno.dni; ");
+            while (datosRecibidos.Read())
+            {
+                listaNotasAlumnos.Add(new Alumno_Notas(
+                    datosRecibidos.GetString(0),
+                    datosRecibidos.GetString(1),
+                    datosRecibidos.GetInt32(2),
+                    datosRecibidos.GetString(3),
+                    datosRecibidos.GetInt32(4),
+                    datosRecibidos.GetInt32(5),
+                    datosRecibidos.GetInt32(6),
+                    datosRecibidos.GetInt32(7),
+                    datosRecibidos.GetString(8)));
+            }
+
+            bd.Cerrar();
+        }
+
+        public int insertarNotasAlumno(Matriculado alumno)
+        {
+            bd.Abrir();
+            int datosInsertados = bd.EjecutarOrden("insert into " +
+                "notas(dnialumno, anocurso, asignatura)"+
+                "values (" +
+                "'" + alumno.Dni + "'," +
+                "" + alumno.AnoCurso + ",'" +alumno.Asignatura +"');");
+            bd.Cerrar();
+            return datosInsertados;
+        }
+
+        public ObservableCollection<Alumno_Notas> GetListaNotasAlumnos()
+        {
+            return listaNotasAlumnos;
         }
     }
 }

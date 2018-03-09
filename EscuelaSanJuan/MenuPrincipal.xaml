@@ -29,7 +29,7 @@
             <MenuItem x:Name="alumnos" Header="Alumnos"  >
                 <MenuItem x:Name="insertarAlumno" Header="Insertar" Click="insertarAlumno_Click" />
                 <MenuItem x:Name="matricularAlumno" Header="Matricular" Click="matricularAlumno_Click" />
-                <MenuItem x:Name="gestionarAlumno" Header="Gestionar" Click="gestionarAlumno_Click"/>
+                <MenuItem x:Name="gestionarAlumno" Header="Gestionar datos personales" Click="gestionarAlumno_Click"/>
                 <MenuItem x:Name="insertarNotas" Header="Notas" Click="insertarNotas_Click" />
             </MenuItem>
             <MenuItem x:Name="profesores" Header="Profesores"  >

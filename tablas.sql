@@ -57,11 +57,12 @@ create table notas
 (
 	dniAlumno varchar(50),
 	anoCurso integer,
-	estudios varchar(200),
-	PrimerTrimestre decimal(3,1),
-	SegundoTrimestre decimal(3,1),
-	TercerTrimestre decimal(3,1),
-	primary key(dniAlumno,anoCurso),
+	asignatura varchar(200),
+	primerTrimestre integer,
+	segundoTrimestre integer,
+	tercerTrimestre integer,
+	notaglobal integer,
+	primary key(dniAlumno,anoCurso,asignatura),
 	FOREIGN key (dniAlumno) references alumno(dni)
 );
 

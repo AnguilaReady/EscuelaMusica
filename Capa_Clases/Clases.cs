@@ -121,48 +121,39 @@ namespace Capa_Clases
         public int AnoCurso { get => anoCurso; set => anoCurso = value; }
     }
 
-    public class Alumno_Matriculado
+    public class Alumno_Notas
     {
-        private string dni;
         private string nombre;
         private string apellidos;
-        private DateTime fechaNacimiento;
-        private DateTime fechaAlta;
-        private string telefono;
-        private string direccion;
-        private string imagen;
-        private string personaContacto;
-        private string asignatura;
         private int anoCurso;
-        private bool activo;
+        private string asignatura;
+        private int primertrimestre;
+        private int segundotrimestre;
+        private int tercertrimestre;
+        private int notaglobal;
+        private string imagen;
 
-        public Alumno_Matriculado(string dni, string nombre, string apellidos, DateTime fechaNacimiento, DateTime fechaAlta, string telefono, string direccion, string imagen, string personaContacto, string asignatura, int anoCurso, bool activo)
+        public Alumno_Notas(string nombre, string apellidos, int anoCurso, string asignatura, int primertrimestre, int segundotrimestre, int tercertrimestre, int notaglobal, string imagen)
         {
-            this.dni = dni;
             this.nombre = nombre;
             this.apellidos = apellidos;
-            this.fechaNacimiento = fechaNacimiento;
-            this.fechaAlta = fechaAlta;
-            this.telefono = telefono;
-            this.direccion = direccion;
-            this.imagen = imagen;
-            this.personaContacto = personaContacto;
-            this.asignatura = asignatura;
             this.anoCurso = anoCurso;
-            this.activo = activo;
+            this.asignatura = asignatura;
+            this.primertrimestre = primertrimestre;
+            this.segundotrimestre = segundotrimestre;
+            this.tercertrimestre = tercertrimestre;
+            this.notaglobal = notaglobal;
+            this.imagen = imagen;
         }
 
-        public string Dni { get => dni; set => dni = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellidos { get => apellidos; set => apellidos = value; }
-        public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
-        public DateTime FechaAlta { get => fechaAlta; set => fechaAlta = value; }
-        public string Telefono { get => telefono; set => telefono = value; }
-        public string Direccion { get => direccion; set => direccion = value; }
-        public string Imagen { get => imagen; set => imagen = value; }
-        public string PersonaContacto { get => personaContacto; set => personaContacto = value; }
-        public string Asignatura { get => asignatura; set => asignatura = value; }
         public int AnoCurso { get => anoCurso; set => anoCurso = value; }
-        public bool Activo { get => activo; set => activo = value; }
+        public string Asignatura { get => asignatura; set => asignatura = value; }
+        public int Primertrimestre { get => primertrimestre; set => primertrimestre = value; }
+        public int Segundotrimestre { get => segundotrimestre; set => segundotrimestre = value; }
+        public int Tercertrimestre { get => tercertrimestre; set => tercertrimestre = value; }
+        public int Notaglobal { get => notaglobal; set => notaglobal = value; }
+        public string Imagen { get => imagen; set => imagen = value; }
     }
 }

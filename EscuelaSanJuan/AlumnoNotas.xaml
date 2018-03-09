@@ -16,8 +16,58 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="AlumnoNotas" Height="300" Width="300" Closing="Window_Closing"  >
+        Title="AlumnoNotas" Height="608.714" Width="903.857" Closing="Window_Closing"  >
+
+    <Window.Resources>
+        <CollectionViewSource  x:Key="lista_Alumnos"  Source="{Binding}" />
+    </Window.Resources>
     <Grid>
-        
+        <TextBox x:Name="tbNombre" materialDesign:HintAssist.Hint="Filtrar por Nombre" Style="{StaticResource MaterialDesignFloatingHintTextBox}" RenderTransformOrigin="0.506,0.4" Margin="34,28,578,0" Height="38" VerticalAlignment="Top" KeyUp="tbNombre_KeyUp" />
+        <ComboBox x:Name="cmbAsignatura" materialDesign:HintAssist.Hint="Filtrar por Asignatura" IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="344,26,350,0" VerticalAlignment="Top" Height="40" SelectionChanged="cmbAsignatura_SelectionChanged" >
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="Piano"/>
+            <ComboBoxItem Content="Violin"/>
+            <ComboBoxItem Content="Saxofon"/>
+            <ComboBoxItem Content="Clarinete"/>
+        </ComboBox>
+        <ComboBox x:Name="cmbAnoCurso" materialDesign:HintAssist.Hint="Filtrar por Curso" IsEditable="False" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="588,26,130,0" VerticalAlignment="Top" Height="40" SelectionChanged="cmbAsignatura_SelectionChanged" >
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding Source={StaticResource lista_Alumnos}}" HorizontalAlignment="Left" Margin="20,90,0,0" Width="860" AutoGenerateColumns="False"
+                AlternationCount="1" SelectionMode="Single" SelectionUnit="FullRow"
+                CanUserResizeRows="False" IsReadOnly="True" SelectionChanged="dataGrid_SelectionChanged" Height="379" VerticalAlignment="Top" >
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Width="*" >
+                    <DataGridTemplateColumn.Header>
+                        <TextBlock  Text="Imagen"/>
+                    </DataGridTemplateColumn.Header>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Path=Imagen}" Width="64" Height="48">
+                                <Image.Clip>
+                                    <EllipseGeometry RadiusX="24" RadiusY="24" Center="32,24" />
+                                </Image.Clip>
+                            </Image>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Binding="{Binding Path=Nombre}" Width="*" Header="Nombre" />
+                <DataGridTextColumn Binding="{Binding Path=Apellidos}" Width="1.5*" Header="Apellido" />
+                <DataGridTextColumn Binding="{Binding Path=Asignatura}" Width="*" Header="Asignatura" />
+                <DataGridTextColumn Binding="{Binding Path=AnoCurso}" Width="*" Header="Curso" />
+                <DataGridTextColumn Binding="{Binding Path=Primertrimestre}" Width="0.5*" Header="1º" />
+                <DataGridTextColumn Binding="{Binding Path=Segundotrimestre}" Width="0.5*" Header="2º" />
+                <DataGridTextColumn Binding="{Binding Path=Tercertrimestre}" Width="0.5*" Header="3º" />
+                <DataGridTextColumn Binding="{Binding Path=Notaglobal}" Width="*" Header="Media" />
+                
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Volver" HorizontalAlignment="Left" Margin="405,490,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="Snackbar" Grid.ColumnSpan="2" Margin="160,0" />
     </Grid>
 </Window>

@@ -101,12 +101,17 @@ namespace EscuelaSanJuan
 
         private void btnEditarTrasero_Click(object sender, RoutedEventArgs e)
         {
-            int insertar = negocio.insertarMatricula(new Matriculado(
+            int insertarMatricula = negocio.insertarMatricula(new Matriculado(
                 alumnoSeleccionado.Dni,
                 cmbAsignatura.Text.ToLower(),
                 Convert.ToInt32(cmbAnoCurso.Text.ToLower())));
 
-            if (insertar > 0)
+            int insertarNotasAlumno = negocio.insertarNotasAlumno(new Matriculado(
+                alumnoSeleccionado.Dni,
+                cmbAsignatura.Text.ToLower(),
+                Convert.ToInt32(cmbAnoCurso.Text.ToLower())));
+
+            if (insertarMatricula > 0 && insertarNotasAlumno>0)
             {
                 MandarMensaje("Alumno matriculado");
             }
