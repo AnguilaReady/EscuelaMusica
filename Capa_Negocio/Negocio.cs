@@ -420,19 +420,20 @@ namespace Capa_Negocio
         public void leerNotasAlumnos()
         {
             bd.Abrir();
-            NpgsqlDataReader datosRecibidos = bd.EjecutarSelect("select nombre,apellidos,anocurso,asignatura,primertrimestre,segundotrimestre,tercertrimestre,notaglobal,imagen from notas, alumno where notas.dnialumno = alumno.dni; ");
+            NpgsqlDataReader datosRecibidos = bd.EjecutarSelect("select dnialumno,nombre,apellidos,anocurso,asignatura,primertrimestre,segundotrimestre,tercertrimestre,notaglobal,imagen from notas, alumno where notas.dnialumno = alumno.dni; ");
             while (datosRecibidos.Read())
             {
                 listaNotasAlumnos.Add(new Alumno_Notas(
                     datosRecibidos.GetString(0),
                     datosRecibidos.GetString(1),
-                    datosRecibidos.GetInt32(2),
-                    datosRecibidos.GetString(3),
-                    datosRecibidos.GetInt32(4),
+                    datosRecibidos.GetString(2),
+                    datosRecibidos.GetInt32(3),
+                    datosRecibidos.GetString(4),
                     datosRecibidos.GetInt32(5),
                     datosRecibidos.GetInt32(6),
                     datosRecibidos.GetInt32(7),
-                    datosRecibidos.GetString(8)));
+                    datosRecibidos.GetInt32(8),
+                    datosRecibidos.GetString(9)));
             }
 
             bd.Cerrar();
@@ -450,9 +451,52 @@ namespace Capa_Negocio
             return datosInsertados;
         }
 
+        public int updatePrimerTrimestre(int nota,Alumno_Notas alumno)
+        {
+            bd.Abrir();
+            int datosModificados = bd.EjecutarOrden("update notas set primertrimestre="+nota+
+                " where dnialumno='"+alumno.Dni+"';");
+            bd.Cerrar();
+            return datosModificados;
+        }
+
+        public int updateSegundoTrimestre(int nota, Alumno_Notas alumno)
+        {
+            bd.Abrir();
+            int datosModificados = bd.EjecutarOrden("update notas set segundotrimestre=" + nota +
+                " where dnialumno='" + alumno.Dni + "';");
+            bd.Cerrar();
+            return datosModificados;
+        }
+
+        public int updateTercerTrimestre(int nota, Alumno_Notas alumno)
+        {
+            bd.Abrir();
+            int datosModificados = bd.EjecutarOrden("update notas set tercertrimestre=" + nota +
+                " where dnialumno='" + alumno.Dni + "';");
+            bd.Cerrar();
+            return datosModificados;
+        }
+
+        public int updateNotaGlobal(int nota, Alumno_Notas alumno)
+        {
+            bd.Abrir();
+            int datosModificados = bd.EjecutarOrden("update notas set notaglobal=" + nota +
+                " where dnialumno='" + alumno.Dni + "';");
+            bd.Cerrar();
+            return datosModificados;
+        }
+
+
+
         public ObservableCollection<Alumno_Notas> GetListaNotasAlumnos()
         {
             return listaNotasAlumnos;
+        }
+
+        public void borrarListaNotasAlumnos()
+        {
+            listaNotasAlumnos.Clear();
         }
     }
 }

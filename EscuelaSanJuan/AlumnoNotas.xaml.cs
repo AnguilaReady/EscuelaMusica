@@ -32,13 +32,14 @@ namespace EscuelaSanJuan
         ObservableCollection<Alumno_Notas> listaNotasAlumno;
         private CollectionViewSource MiVista;
         private Alumno_Notas alumnoSeleccionado;
+        int notaGlobalAlumno;
         public AlumnoNotas(Negocio negocio, MenuPrincipal menuPrincipal)
         {
             this.negocio = negocio;
             this.menuPrincipal = menuPrincipal;
 
-            negocio.borrarListaAlumnos();
-            negocio.leerAlumnos();
+            negocio.borrarListaNotasAlumnos();
+            negocio.leerNotasAlumnos();
             listaNotasAlumno = negocio.GetListaNotasAlumnos();
             InitializeComponent();
             MiVista = (System.Windows.Data.CollectionViewSource)this.Resources["lista_Alumnos"];
@@ -52,6 +53,7 @@ namespace EscuelaSanJuan
 
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            Console.WriteLine();
             /*alumnoSeleccionado = dataGrid.SelectedItem as Alumno_Notas;
             if (alumnoSeleccionado != null)
             {
@@ -95,20 +97,20 @@ namespace EscuelaSanJuan
         public void megafiltro(object sender, FilterEventArgs e)
         {
             Alumno_Notas alumno = (Alumno_Notas)e.Item;
-            string nombre = tbNombre.Text;
+            string nombre = tbNombre.Text.ToLower();
             ComboBoxItem typeItem = (ComboBoxItem)cmbAsignatura.SelectedItem;
-            string asignatura = typeItem.Content.ToString();
+            string asignatura = typeItem.Content.ToString().ToLower();
             ComboBoxItem typeItem2 = (ComboBoxItem)cmbAnoCurso.SelectedItem;
             string numero = typeItem2.Content.ToString();
             Console.WriteLine();
 
             if (alumno != null)
             {
-                if (alumno.Nombre.Contains(nombre))
+                if (alumno.Nombre.ToLower().Contains(nombre))
                 {
                     if (asignatura != "")
                     {
-                        if(alumno.Asignatura.Trim()==asignatura)
+                        if(alumno.Asignatura.Trim().ToLower()==asignatura)
                         {
                             if(numero != "")
                             {
@@ -165,6 +167,82 @@ namespace EscuelaSanJuan
                 MiVista.Filter += new FilterEventHandler(megafiltro);
             }
             catch (NullReferenceException) { }
+        }
+
+        private void dataGrid_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            DataGridRow dgr = e.Row;
+            TextBox t = e.EditingElement as TextBox;
+            DataGridColumn dgc = e.Column;
+   
+            string columnaModificada = dgc.Header.ToString();
+            int dato= Convert.ToInt32(t.Text.ToString());
+
+            if (columnaModificada == "1º")
+            {
+                if(dato<0 || dato>10)
+                {
+                    MandarMensaje("La nota tiene que estar entre 0 y 10");
+                }
+                else
+                {
+                    int notaGlobalAlumno = (dato + alumnoSeleccionado.Segundotrimestre + alumnoSeleccionado.Tercertrimestre) / 3;
+                    int insercion1 = negocio.updatePrimerTrimestre(dato, alumnoSeleccionado);
+                    int insercion2 = negocio.updateNotaGlobal(notaGlobalAlumno, alumnoSeleccionado);
+                    if (insercion1 > 0 && insercion2 > 0)
+                    {
+                        MandarMensaje("Nota Guardada");
+                    }
+                }
+                
+                
+            }
+            if (columnaModificada == "2º")
+            {
+                if (dato < 0 || dato > 10)
+                {
+                    MandarMensaje("La nota tiene que estar entre 0 y 10");
+                }
+                else
+                {
+                    int notaGlobalAlumno = (alumnoSeleccionado.Primertrimestre + dato + alumnoSeleccionado.Tercertrimestre) / 3;
+                    int insercion1 = negocio.updateSegundoTrimestre(dato, alumnoSeleccionado);
+                    int insercion2 = negocio.updateNotaGlobal(notaGlobalAlumno, alumnoSeleccionado);
+                    if (insercion1 > 0 && insercion2 > 0)
+                    {
+                        MandarMensaje("Nota Guardada");
+                    }
+                }
+                
+            }
+            if (columnaModificada == "3º")
+            {
+                if (dato < 0 || dato > 10)
+                {
+                    MandarMensaje("La nota tiene que estar entre 0 y 10");
+                }
+                else
+                {
+                    int notaGlobalAlumno = (alumnoSeleccionado.Primertrimestre + alumnoSeleccionado.Segundotrimestre + dato) / 3;
+                    int insercion1 = negocio.updateTercerTrimestre(dato, alumnoSeleccionado);
+                    int insercion2 = negocio.updateNotaGlobal(notaGlobalAlumno, alumnoSeleccionado);
+                    if (insercion1 > 0 && insercion2 > 0)
+                    {
+                        MandarMensaje("Nota Guardada");
+                    }
+                }
+            }
+            
+            negocio.borrarListaNotasAlumnos();
+            negocio.leerNotasAlumnos();
+            listaNotasAlumno = negocio.GetListaNotasAlumnos();
+            MiVista.Source = null;
+            MiVista.Source = listaNotasAlumno;
+        }
+
+        private void dataGrid_BeginningEdit(object sender, DataGridBeginningEditEventArgs e)
+        {
+            alumnoSeleccionado = dataGrid.SelectedItem as Alumno_Notas;
         }
     }
 }

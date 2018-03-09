@@ -123,6 +123,7 @@ namespace Capa_Clases
 
     public class Alumno_Notas
     {
+        private string dni;
         private string nombre;
         private string apellidos;
         private int anoCurso;
@@ -133,8 +134,9 @@ namespace Capa_Clases
         private int notaglobal;
         private string imagen;
 
-        public Alumno_Notas(string nombre, string apellidos, int anoCurso, string asignatura, int primertrimestre, int segundotrimestre, int tercertrimestre, int notaglobal, string imagen)
+        public Alumno_Notas(string dni,string nombre, string apellidos, int anoCurso, string asignatura, int primertrimestre, int segundotrimestre, int tercertrimestre, int notaglobal, string imagen)
         {
+            this.dni = dni;
             this.nombre = nombre;
             this.apellidos = apellidos;
             this.anoCurso = anoCurso;
@@ -155,5 +157,6 @@ namespace Capa_Clases
         public int Tercertrimestre { get => tercertrimestre; set => tercertrimestre = value; }
         public int Notaglobal { get => notaglobal; set => notaglobal = value; }
         public string Imagen { get => imagen; set => imagen = value; }
+        public string Dni { get => dni; set => dni = value; }
     }
 }

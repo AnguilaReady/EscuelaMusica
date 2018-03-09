@@ -40,7 +40,7 @@
         </ComboBox>
         <DataGrid x:Name="dataGrid" ItemsSource="{Binding Source={StaticResource lista_Alumnos}}" HorizontalAlignment="Left" Margin="20,90,0,0" Width="860" AutoGenerateColumns="False"
                 AlternationCount="1" SelectionMode="Single" SelectionUnit="FullRow"
-                CanUserResizeRows="False" IsReadOnly="True" SelectionChanged="dataGrid_SelectionChanged" Height="379" VerticalAlignment="Top" >
+                CanUserResizeRows="False" SelectionChanged="dataGrid_SelectionChanged" Height="379" VerticalAlignment="Top" CellEditEnding="dataGrid_CellEditEnding" BeginningEdit="dataGrid_BeginningEdit" >
             <DataGrid.Columns>
                 <DataGridTemplateColumn Width="*" >
                     <DataGridTemplateColumn.Header>
@@ -56,14 +56,14 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Binding="{Binding Path=Nombre}" Width="*" Header="Nombre" />
-                <DataGridTextColumn Binding="{Binding Path=Apellidos}" Width="1.5*" Header="Apellido" />
-                <DataGridTextColumn Binding="{Binding Path=Asignatura}" Width="*" Header="Asignatura" />
-                <DataGridTextColumn Binding="{Binding Path=AnoCurso}" Width="*" Header="Curso" />
+                <DataGridTextColumn Binding="{Binding Path=Nombre}" Width="*" Header="Nombre" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Path=Apellidos}" Width="1.5*" Header="Apellido" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Path=Asignatura}" Width="*" Header="Asignatura" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Path=AnoCurso}" Width="*" Header="Curso" IsReadOnly="True"/>
                 <DataGridTextColumn Binding="{Binding Path=Primertrimestre}" Width="0.5*" Header="1º" />
                 <DataGridTextColumn Binding="{Binding Path=Segundotrimestre}" Width="0.5*" Header="2º" />
                 <DataGridTextColumn Binding="{Binding Path=Tercertrimestre}" Width="0.5*" Header="3º" />
-                <DataGridTextColumn Binding="{Binding Path=Notaglobal}" Width="*" Header="Media" />
+                <DataGridTextColumn Binding="{Binding Path=Notaglobal}" Width="*" Header="Media" IsReadOnly="True"/>
                 
             </DataGrid.Columns>
         </DataGrid>
